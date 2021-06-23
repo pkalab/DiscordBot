@@ -1,0 +1,32 @@
+{
+  "name": "botdisc",
+  "version": "1.0.0",
+  "description": "A Discord bot which fetches Bluzelle analytic indicators",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "crypto"
+  ],
+  "author": "Polina Shtanko",
+  "license": "(MIT OR Apache-2.0)",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "botium-core": "^1.11.6",
+    "cheerio": "^1.0.0-rc.10",
+    "discord-prefix": "^2.0.0",
+    "discord-slash-commands-client": "^1.2.1",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.6.0",
+    "geckodriver": "^2.0.0",
+    "jest-discordjs-mocks": "^1.0.2",
+    "puppeteer": "^10.0.0",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "corde": "^4.1.2"
+  }
+}
