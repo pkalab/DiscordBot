@@ -1,5 +1,5 @@
 # DiscordBot BLZ
-BLUZELLE DISCORD BOT
+##BLUZELLE DISCORD BOT
 
 Bluzelle Discord Bot has 9 commands. It makes calls to Coingecko, Bluzelle testnet and Bluzelle mainnet. There is also 12 unit test cases included which run with Jest framework. 
 
@@ -8,7 +8,7 @@ This document will walk you through the process of deploying Bot on your server,
 
 
 
-CREATE A BOT INSIDE DISCORD
+##CREATE A BOT INSIDE DISCORD
 
 Here are the step to creating a Discord Bot account.
 1. Make sure you’re logged on to the Discord website.
