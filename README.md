@@ -55,16 +55,17 @@ Check .env variable as wel. It should contain your unique bot token
 
 
 1 Navigate to jest-unit-test folder 
-	cd jest-unit-test
+cd jest-unit-test
 2 Install ts-jest
 npm install --save-dev jest typescript ts-jest @types/jest
-
 3. To run test cases
 npm test
 
 
 *Note
 Sometimes test cases run too slow and do not have time to synchronize correctly. It will output test failed for test #8 /block_hash command. Rerun it again
+
+
 
 
 Install PM2.
@@ -91,6 +92,9 @@ Output
 sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -> -u ubuntu --hp /home/ubuntu
 Run the command that was generated (similar to the highlighted output above, but with your username instead of ubuntu) to set PM2 up to start on boot (use the command from your own output):
 sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -> u ubuntu --hp /home/ubuntu
+
+
+
 
 DESCRIPTION OF COMMANDS
 
