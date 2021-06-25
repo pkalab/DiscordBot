@@ -1,5 +1,5 @@
 # DiscordBot BLZ
-##BLUZELLE DISCORD BOT
+## BLUZELLE DISCORD BOT
 
 Bluzelle Discord Bot has 9 commands. It makes calls to Coingecko, Bluzelle testnet and Bluzelle mainnet. There is also 12 unit test cases included which run with Jest framework. 
 
@@ -8,7 +8,7 @@ This document will walk you through the process of deploying Bot on your server,
 
 
 
-##CREATE A BOT INSIDE DISCORD
+## CREATE A BOT INSIDE DISCORD
 
 Here are the step to creating a Discord Bot account.
 1. Make sure you’re logged on to the Discord website.
@@ -35,7 +35,7 @@ To add the bot, your account needs "Manage Server" permissions.
 
 
 
-CODING BLZ BOT
+## CODING BLZ BOT
 I used Discord.js library with Axios to get API
 You need to create .env file in your directory with TOKEN variable which will store Bot’s password 
 Commands are:
@@ -45,7 +45,7 @@ nano .env //to edit
 
 
 
-CLONE GITHUB REPOSITORY 
+## CLONE GITHUB REPOSITORY 
 https://github.com/pkalab/DiscordBot
 1 git clone https://github.com/pkalab/DiscordBot.git
 2 To initiate all dependancies run npm init 
@@ -68,7 +68,7 @@ Sometimes test cases run too slow and do not have time to synchronize correctly.
 
 
 
-Install PM2.
+## Install PM2.
 PM2 provides an easy way to manage and daemonize applications (run them in the background as a service).
 We will use npm, a package manager for Node modules that installs with Node.js, to install PM2 on our server. Use this command to install PM2
 sudo npm install -g pm2
@@ -96,7 +96,7 @@ sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -
 
 
 
-DESCRIPTION OF COMMANDS
+## DESCRIPTION OF COMMANDS
 
 Currently there are 9 main commands.
 													
