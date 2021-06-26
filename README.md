@@ -67,11 +67,11 @@ Check .env variable as wel. It should contain your unique bot token
 
 
 1 Navigate to jest-unit-test folder 
-cd jest-unit-test
+**cd jest-unit-test**
 2 Install ts-jest
-npm install --save-dev jest typescript ts-jest @types/jest
+**npm install --save-dev jest typescript ts-jest @types/jest**
 3. To run test cases
-npm test
+**npm test**
 
 
 *Note
@@ -81,13 +81,13 @@ Sometimes test cases run too slow and do not have time to synchronize correctly.
 
 
 ## Install PM2.
-PM2 provides an easy way to manage and daemonize applications (run them in the background as a service).
-We will use npm, a package manager for Node modules that installs with Node.js, to install PM2 on our server. Use this command to install PM2
-sudo npm install -g pm2
+PM2 provides an easy way to manage and daemonize applications (run them in the background as a service).\
+We will use npm, a package manager for Node modules that installs with Node.js, to install PM2 on our server. Use this command to install PM2\
+**sudo npm install -g pm2**\
 Now, we will use the pm2 start command to run our bot, bot.js, in the background
-pm2 start bot2.js
-[PM2] Starting /home/ubuntu/discord-greeter-bot/bot.js in fork_mode(1 instance)
-[PM2] Done.
+**pm2 start bot2.js**\
+[PM2] Starting /home/ubuntu/discord-greeter-bot/bot.js in fork_mode(1 instance)\
+[PM2] Done.\
 ┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
 │ id │ name │ mode │ ↺ │ status │ cpu │ memory > │
 ├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
@@ -98,11 +98,11 @@ Applications that are running under PM2 will be restarted automatically if the a
 The startup subcommand generates and configures a startup script to launch PM2 and its managed processes on server boots:
 pm2 startup systemd
 The last line of the resulting output will include a command that you must run with superuser privileges:
-Output
-[PM2] Init System found: systemd
-[PM2] You have to run this command as root. Execute the following command:
+Output\
+[PM2] Init System found: systemd\
+[PM2] You have to run this command as root. Execute the following command:\
 sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -> -u ubuntu --hp /home/ubuntu
-Run the command that was generated (similar to the highlighted output above, but with your username instead of ubuntu) to set PM2 up to start on boot (use the command from your own output):
+Run the command that was generated (similar to the highlighted output above, but with your username instead of ubuntu) to set PM2 up to start on boot (use the command from your own output):\
 sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -> u ubuntu --hp /home/ubuntu
 
 
@@ -114,15 +114,15 @@ Currently there are 9 main commands.
 
 ![github-small](https://user-images.githubusercontent.com/57189190/123517951-c9c96680-d671-11eb-802a-3bc4d1d71596.png)
 
-1. /help – will help to navigate
-2. /validators_test – will make a call to BLZ testnet and GET number of active validators
-3./latest_block_hash – will make a call to BLZ testnet and GET latest block hash
-4./block_height_test – will make a call to BLZ testnet and GET block height 
-5./price_to_usd – will make a call to Coingecko web site and get BLZ price in USD
-6./block_height – will make a call to BLZ mainnet and GET block height
-7. /validators – will make a call to BLZ mainnet and GET number of active validators
-8./block_hash – will make a call to BLZ mainnet and GET latest block hash
-9. /block_time_last – will make a call to BLZ mainnet and GET last block time
+1./help – will help to navigate\
+2./validators_test – will make a call to BLZ testnet and GET number of active validators\
+3./latest_block_hash – will make a call to BLZ testnet and GET latest block hash\
+4./block_height_test – will make a call to BLZ testnet and GET block height\ 
+5./price_to_usd – will make a call to Coingecko web site and get BLZ price in USD\
+6./block_height – will make a call to BLZ mainnet and GET block height\
+7./validators – will make a call to BLZ mainnet and GET number of active validators\
+8./block_hash – will make a call to BLZ mainnet and GET latest block hash\
+9./block_time_last – will make a call to BLZ mainnet and GET last block time\
 
 ## TESTING DISCORD BOT
 
