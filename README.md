@@ -15,6 +15,8 @@ Here are the step to creating a Discord Bot account.
 2. Navigate to the application page.
 3. Click on the “New Application” button.
 
+![myimage-alt-tag](https://drive.google.com/file/d/1yJRAsgbQ9N_imkQ_HNdyjrtyrCQVE9lU/view?usp=sharing)
+
 4. Give the application a name and click “Create”.
 
 5. Go to the “Bot” tab and then click “Add Bot”. You will have to confirm by clicking "Yes, do it!"
