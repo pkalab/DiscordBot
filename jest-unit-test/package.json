@@ -4,7 +4,7 @@
   "main": "bot2.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon /Users/polinakalabuhova/BotDisc/jest-unit-test/index.ts",
+    "dev": "nodemon ../index.ts",
     "build": "tsc",
     "test": "jest",
     "test:watch": "jest --watch"
