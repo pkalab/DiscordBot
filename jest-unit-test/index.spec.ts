@@ -1,6 +1,6 @@
-import { index } from "cheerio/lib/api/traversing";
+
 import { Message } from "discord.js";
-import { messageHandler } from "/Users/polinakalabuhova/BotDisc/jest-unit-test";
+import { messageHandler } from "../jest-unit-test";
 const axios = require('axios');
 
 //Message Handler that was imported from index.ts
