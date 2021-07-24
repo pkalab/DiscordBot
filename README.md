@@ -10,9 +10,9 @@ This document will walk you through the process of deploying Bot on your server,
 
 ## CREATE A BOT INSIDE DISCORD
 
-Here are the step to creating a Discord Bot account.
-1. Make sure you’re logged on to the Discord website.
-2. Navigate to the application page.
+Here are the step to creating a Discord Bot account. 
+1. Make sure you’re logged on to the Discord website. 
+2. Navigate to the application page. 
 3. Click on the “New Application” button.
 
 ![github-small](https://user-images.githubusercontent.com/57189190/123517610-f2506100-d66f-11eb-9ea0-a2c0e3efa183.png)
@@ -47,23 +47,22 @@ To add the bot, your account needs "Manage Server" permissions.
 
 
 ## CODING BLZ BOT
-I used Discord.js library with Axios to get API
-You need to create .env file in your directory with TOKEN variable which will store Bot’s password 
+
 Commands are:\
 touch .env\
-ls -a     			 //to see all hidden .files in current directory\
-nano .env 	//to edit
+ls -a\
+nano .env 
 
 ![github-small](https://user-images.githubusercontent.com/57189190/123517929-b6b69680-d671-11eb-8c6a-6313730cadb2.png)
 ![github-small](https://user-images.githubusercontent.com/57189190/123517941-c0d89500-d671-11eb-8bc1-4aef9ffaa369.png)
 
 ## CLONE GITHUB REPOSITORY 
-https://github.com/pkalab/DiscordBot
-1 git clone https://github.com/pkalab/DiscordBot.git
+https://github.com/pkalab/DiscordBot \
+1 git clone https://github.com/pkalab/DiscordBot.git \
 2 To initiate all dependancies run npm init 
-If there are any issues try npm install discord.js. 
-Check .env variable as wel. It should contain your unique bot token
-3 To run bot type node bot2.js
+If there are any issues try npm install discord.js.
+Check .env variable as wel. It should contain your unique bot token        \
+3 To run bot type node bot2.js      
 
 
 1 Navigate to jest-unit-test folder 
@@ -88,12 +87,7 @@ Now, we will use the pm2 start command to run our bot, bot.js, in the background
 **pm2 start bot2.js**\
 [PM2] Starting /home/ubuntu/discord-greeter-bot/bot.js in fork_mode(1 instance)\
 [PM2] Done.\
-┌────┬────────────────────┬──────────┬──────┬───────────┬──────────┬──────────┐
-│ id │ name │ mode │ ↺ │ status │ cpu │ memory > │
-├────┼────────────────────┼──────────┼──────┼───────────┼──────────┼──────────┤
-│ 0 │ bot │ fork │ 0 │ online │ 0% │ 40.4mb │
-│ 1 │ bot │ fork │ 0 │ online │ 0% │ 24.5mb │
-└────┴────────────────────┴──────────┴──────┴───────────┴──────────┴──────────┘
+
 Applications that are running under PM2 will be restarted automatically if the application crashes or is killed, but an additional step needs to be taken to get the application to launch on system startup (boot or reboot). Luckily, PM2 provides an easy way to do this, the startup subcommand.
 The startup subcommand generates and configures a startup script to launch PM2 and its managed processes on server boots:
 pm2 startup systemd
