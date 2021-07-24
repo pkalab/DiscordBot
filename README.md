@@ -62,15 +62,15 @@ https://github.com/pkalab/DiscordBot \
 2 To initiate all dependancies run npm init 
 If there are any issues try npm install discord.js.
 Check .env variable as wel. It should contain your unique bot token        \
-3 To run bot type node bot2.js      
+3 To run bot type node bot2.js \      
 
 
-1 Navigate to jest-unit-test folder 
-**cd jest-unit-test**
-2 Install ts-jest
-**npm install --save-dev jest typescript ts-jest @types/jest**
-3. To run test cases
-**npm test**
+1 Navigate to jest-unit-test folder \ 
+**cd jest-unit-test** \
+2 Install ts-jest \
+**npm install --save-dev jest typescript ts-jest @types/jest** \
+3. To run test cases \
+**npm test** 
 
 
 *Note
